@@ -1249,7 +1249,7 @@ useEffect(() => {
               onClick={handleMenu}
             >
               <Avatar
-                alt="Multi100"
+                alt={colorMode?.appName || "Thizhe Tecnologia"}
                 className={classes.avatar2}
                 src={profileUrl}
               />

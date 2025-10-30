@@ -59,10 +59,9 @@ const useStyles = makeStyles((theme) => {
         boxSizing: "border-box",
         overflow: "hidden",
         position: "relative",
-        background: theme.palette.type === "dark" 
-          ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" 
-          : "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        backgroundImage: "none",
+                /* Use global primary gradient as default; removed hardcoded backgroundImage:none so gradient can show
+                     If a company image is provided we will layer it on top of this gradient via inline style. */
+                background: "var(--primary-gradient)",
         
         [theme.breakpoints.down("sm")]: {
             flexDirection: "column",
@@ -475,16 +474,17 @@ const Login = () => {
     return (
         <>
             <Helmet>
-                <title>{appName || "Multi100"}</title>
+                <title>{appName || "Thizhe Tecnologia"}</title>
                 <link rel="icon" href={appLogoFavicon || "/default-favicon.ico"} />
             </Helmet>
 
             <div 
                 className={classes.root}
                 style={{
-                    backgroundImage: typeof finalBackground === "string" && finalBackground.includes("url(") 
-                        ? finalBackground 
-                        : "none"
+                    /* If finalBackground is an URL, layer it over the primary gradient. If it's a color, use it. Otherwise use the gradient var as fallback. */
+                    background: typeof finalBackground === "string" && finalBackground.includes("url(")
+                        ? `${finalBackground} center/cover no-repeat, var(--primary-gradient)`
+                        : (typeof finalBackground === "string" ? finalBackground : "var(--primary-gradient)")
                 }}
             >
                 {/* Seletor de idioma */}

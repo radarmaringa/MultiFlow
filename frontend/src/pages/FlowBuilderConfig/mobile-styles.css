@@ -439,6 +439,8 @@
   --primary-main: #089FFA;
   --primary-dark: #0477B3;
   --primary-light: #4FCBFF;
+  /* Gradiente principal (usado como fallback e padrão global) */
+  --primary-gradient: linear-gradient(135deg, #089FFA 0%, #7C3AED 100%);
   --primary-contrast-text: #ffffff;
   --secondary-main: #7C3AED;
   --secondary-dark: #5B21B6;
@@ -465,6 +467,8 @@
   --primary-main: #4FCBFF;
   --primary-dark: #089FFA;
   --primary-light: #EAF9FF;
+  /* Gradiente principal para tema escuro (padrão mantém as mesmas cores do logo para consistência) */
+  --primary-gradient: linear-gradient(135deg, #089FFA 0%, #7C3AED 100%);
   --primary-contrast-text: #000000;
   --secondary-main: #7C3AED;
   --secondary-dark: #5B21B6;
@@ -490,6 +494,7 @@
   --primary-main: #4FCBFF;
   --primary-dark: #089FFA;
   --primary-light: #EAF9FF;
+  --primary-gradient: linear-gradient(135deg, #089FFA 0%, #7C3AED 100%);
   --primary-contrast-text: #000000;
   --secondary-main: #7C3AED;
   --secondary-dark: #5B21B6;

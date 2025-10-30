@@ -425,11 +425,11 @@ const App = () => {
       });
     getPublicSetting("appName")
       .then((name) => {
-        setAppName(name || "Multi100");
+        setAppName(name || "Thizhe Tecnologia");
       })
       .catch((error) => {
         console.log("Error reading setting", error);
-        setAppName("Multi100");
+        setAppName("Thizhe Tecnologia");
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
