@@ -7,7 +7,7 @@ export function SpeedDialButton({ children }) {
         <button
           type="button"
           aria-expanded="false"
-          class="flex h-16 w-16 items-center justify-center rounded-full bg-[#0000FF] text-white  focus:outline-none focus:ring-4"
+          class="flex h-16 w-16 items-center justify-center rounded-full bg-[#089FFA] text-white  focus:outline-none focus:ring-4"
         >
           <svg
             class="h-5 w-5 transition-transform group-hover:rotate-45"

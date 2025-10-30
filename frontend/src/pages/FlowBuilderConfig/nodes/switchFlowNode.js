@@ -21,9 +21,9 @@ export default memo(({ data, isConnectable, id }) => {
       <Handle
         type="target"
         position="left"
-        className="bg-[#0000FF] flex justify-center w-5 h-5 cursor-pointer top-5 -left-3"
+        className="bg-[#089FFA] flex justify-center w-5 h-5 cursor-pointer top-5 -left-3"
         style={{
-          background: "#0000FF",
+          background: "#089FFA",
           width: "18px",
           height: "18px",
           top: "20px",
@@ -118,7 +118,7 @@ export default memo(({ data, isConnectable, id }) => {
         position="right"
         id="a"
         style={{
-          background: "#0000FF",
+          background: "#089FFA",
           width: "18px",
           height: "18px",
           top: "90%",

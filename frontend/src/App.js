@@ -24,7 +24,7 @@ const App = () => {
   const appColorLocalStorage =
     localStorage.getItem("primaryColorLight") ||
     localStorage.getItem("primaryColorDark") ||
-    "#065183";
+    "#089FFA";
   const appNameLocalStorage = localStorage.getItem("appName") || "";
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const preferredTheme = window.localStorage.getItem("preferredTheme");
@@ -384,7 +384,7 @@ const App = () => {
   useEffect(() => {
     getPublicSetting("primaryColorLight")
       .then((color) => {
-        setPrimaryColorLight(color || "#0000FF");
+        setPrimaryColorLight(color || "#089FFA");
       })
       .catch((error) => {
         console.log("Error reading setting", error);
